@@ -12,7 +12,6 @@ for i in data:
   else:
     position[1] += int(num)
 
-xpos = position[0]
-ypos = position[1]
+xpos, ypos = position
 
 print(xpos * ypos)
