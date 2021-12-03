@@ -3,7 +3,7 @@ position = [0,0]
 with open("./data.txt", "r") as f:
   data = f.readlines()
 
-for i in data:
+for command, num in map(str.split, data):
   command, num = i.split() 
   if command == "forward":
     position[0] += int(num)
